@@ -1,0 +1,19 @@
+{
+  "id": "/",
+  "name": "",
+  "short_name": "",
+  "description": "",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "lang": "en",
+  "dir": "auto",
+  "prefer_related_applications": false,
+  "categories": [],
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  }
+}

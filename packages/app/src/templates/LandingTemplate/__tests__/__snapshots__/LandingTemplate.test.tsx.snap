@@ -40,9 +40,6 @@ exports[`LandingTemplate to match snapshot 1`] = `
         <h1
           class="text-5xl font-bold md:text-6xl"
         />
-        <p
-          class="text-lg opacity-70"
-        />
         <a
           class="btn btn-primary btn-lg"
           href=""
@@ -58,9 +55,6 @@ exports[`LandingTemplate to match snapshot 1`] = `
         <h2
           class="text-4xl font-bold"
         />
-        <p
-          class="opacity-70"
-        />
         <a
           class="btn btn-primary btn-lg"
           href=""
@@ -71,12 +65,14 @@ exports[`LandingTemplate to match snapshot 1`] = `
       class="px-6 py-8"
     >
       <div
-        class="container mx-auto text-center text-sm opacity-60"
+        class="container mx-auto flex flex-col items-center gap-3 text-center text-sm opacity-60"
       >
-        © 
-        2026
-         
-        . All rights reserved.
+        <span>
+          © 
+          2026
+           
+          . All rights reserved.
+        </span>
       </div>
     </footer>
   </div>

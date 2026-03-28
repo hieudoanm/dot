@@ -1,6 +1,5 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
+node_modules
 /node_modules
 /.pnp
 .pnp.*
@@ -12,36 +11,18 @@
 
 # testing
 /coverage
+coverage
 
 # next.js
 /.next/
+.next
 /out/
+next-env.d.ts
 
 # production
 /build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-
-# prisma
-/src/generated/prisma
+dist
+docs
 
 # mobile
 mobile/android
@@ -49,3 +30,26 @@ mobile/ios
 
 # tauri
 /src-tauri
+src-tauri
+src-tauri/target
+/src-tauri/target/
+/src-tauri/gen/schemas
+
+# prisma
+/src/generated/prisma
+
+# vercel
+.vercel
+
+# misc
+.DS_Store
+*.pem
+*.tsbuildinfo
+.env*
+public
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*

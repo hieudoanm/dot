@@ -124,7 +124,7 @@ pnpm install --save-dev --save-exact @capacitor/cli
 # 1. tRPC
 pnpm install --save-dev --save-exact @trpc/server @trpc/client @trpc/react-query @trpc/next @tanstack/react-query@latest zod
 # 2. Prisma
-pnpm install --save-dev --save-exact prisma
+pnpm install --save-dev --save-exact prisma prisma-dbml-generator prisma-json-schema-generator
 # 3. Redis
 pnpm install --save-exact redis
 # 4. Auth.js

@@ -1,0 +1,11 @@
+datasource db {
+  provider = "sqlite"
+}
+
+generator dbml {
+  provider = "prisma-dbml-generator"
+}
+
+generator jsonSchema {
+  provider = "prisma-json-schema-generator"
+}

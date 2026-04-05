@@ -3,78 +3,2369 @@
 exports[`LandingTemplate to match snapshot 1`] = `
 <div>
   <div
-    class="text-base-content relative overflow-x-hidden"
+    class="bg-base-100 text-base-content min-h-screen font-sans"
+    data-theme="luxury"
   >
     <div
-      class="pointer-events-none fixed inset-0 -z-10 overflow-hidden"
+      class="drawer drawer-end"
     >
-      <div
-        class="absolute top-1/2 left-1/2 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(250,204,21,0.35)_0%,rgba(250,204,21,0.15)_35%,transparent_70%)] blur-3xl"
+      <input
+        class="drawer-toggle"
+        id="demo-drawer"
+        type="checkbox"
       />
-    </div>
-    <div
-      class="fixed top-0 z-50 w-full transition-all duration-300"
-    >
       <div
-        class="container mx-auto px-4"
+        class="drawer-side z-50"
       >
+        <label
+          class="drawer-overlay"
+          for="demo-drawer"
+        />
         <div
-          class="flex items-center justify-between px-6 py-3 transition-all duration-300 bg-transparent"
+          class="bg-base-200 border-base-300 min-h-full w-96 border-l p-8"
         >
           <div
-            class="text-xl font-bold"
-          />
-          <a
-            class="btn btn-primary btn-sm"
-            href=""
-          />
+            class="mb-7 flex items-center justify-between"
+          >
+            <h3
+              class="font-serif text-xl font-bold"
+            >
+              Drawer panel
+            </h3>
+            <label
+              class="btn btn-ghost btn-sm btn-square text-base-content/50"
+              for="demo-drawer"
+            >
+              ✕
+            </label>
+          </div>
+          <p
+            class="text-base-content/50 mb-6 text-sm leading-relaxed"
+          >
+            Drawers slide in from the edge of the screen. Ideal for settings panels, detail views, and secondary navigation. Focus is trapped within the drawer while it's open.
+          </p>
+          <div
+            class="form-control mb-4"
+          >
+            <label
+              class="label"
+            >
+              <span
+                class="label-text text-base-content/50 text-xs"
+              >
+                Theme
+              </span>
+            </label>
+            <select
+              class="select select-bordered w-full"
+            >
+              <option>
+                Dark (Obsidian)
+              </option>
+              <option>
+                Light (Chalk)
+              </option>
+              <option>
+                Auto (system)
+              </option>
+            </select>
+          </div>
+          <div
+            class="form-control mb-6"
+          >
+            <label
+              class="label"
+            >
+              <span
+                class="label-text text-base-content/50 text-xs"
+              >
+                Accent color
+              </span>
+            </label>
+            <select
+              class="select select-bordered w-full"
+            >
+              <option>
+                Gold
+              </option>
+              <option>
+                Teal
+              </option>
+              <option>
+                Coral
+              </option>
+            </select>
+          </div>
+          <button
+            class="btn btn-primary w-full"
+          >
+            Save settings
+          </button>
         </div>
       </div>
     </div>
-    <section
-      class="flex h-screen w-screen items-center justify-center px-6 text-center"
+    <div
+      class="navbar bg-base-100/85 border-base-300 sticky top-0 z-50 min-h-[60px] border-b px-12 backdrop-blur-xl"
     >
       <div
-        class="container mx-auto space-y-6"
+        class="navbar-start"
       >
-        <h1
-          class="text-5xl font-bold md:text-6xl"
-        />
-        <a
-          class="btn btn-primary btn-lg"
-          href=""
-        />
+        <span
+          class="text-primary font-serif text-2xl font-bold tracking-widest"
+        >
+          Forma
+        </span>
+      </div>
+      <div
+        class="navbar-center hidden lg:flex"
+      >
+        <ul
+          class="menu menu-horizontal text-base-content/60 gap-2 px-1 text-sm"
+        >
+          <li>
+            <a
+              class="hover:text-base-content"
+              href="#primitives"
+            >
+              Components
+            </a>
+          </li>
+          <li>
+            <a
+              class="hover:text-base-content"
+              href="#forms"
+            >
+              Forms
+            </a>
+          </li>
+          <li>
+            <a
+              class="hover:text-base-content"
+              href="#feedback"
+            >
+              Feedback
+            </a>
+          </li>
+          <li>
+            <a
+              class="hover:text-base-content"
+              href="#navigation"
+            >
+              Navigation
+            </a>
+          </li>
+          <li>
+            <a
+              class="hover:text-base-content"
+              href="#data"
+            >
+              Data
+            </a>
+          </li>
+          <li>
+            <a
+              class="hover:text-base-content"
+              href="#pricing"
+            >
+              Pricing
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="navbar-end gap-2"
+      >
+        <button
+          class="btn btn-ghost btn-sm"
+        >
+          Sign in
+        </button>
+        <button
+          class="btn btn-primary btn-sm"
+        >
+          Get started
+        </button>
+      </div>
+    </div>
+    <section
+      class="relative mx-auto max-w-5xl px-12 py-36 text-center"
+      id="hero"
+    >
+      <div
+        class="bg-primary/5 pointer-events-none absolute top-0 left-1/2 h-[600px] w-[600px] -translate-x-1/2 rounded-full blur-3xl"
+      />
+      <p
+        class="text-primary mb-7 text-xs tracking-[0.2em] uppercase"
+      >
+        v2.4.0 · 47 components · MIT license
+      </p>
+      <h1
+        class="mb-6 font-serif text-7xl leading-[1.05] font-black tracking-tight"
+      >
+        Build interfaces
+        <br />
+        that 
+        <span
+          class="text-primary"
+        >
+          feel
+        </span>
+         right
+      </h1>
+      <p
+        class="text-base-content/60 mx-auto mb-11 max-w-xl text-lg leading-relaxed"
+      >
+        Forma is a refined design system for teams who care about every pixel. Accessible, composable, and darkly beautiful.
+      </p>
+      <div
+        class="flex flex-wrap justify-center gap-3"
+      >
+        <label
+          class="btn btn-primary"
+          for="demo-modal"
+        >
+          ▶ View demo
+        </label>
+        <button
+          class="btn btn-ghost"
+        >
+          Read the docs
+        </button>
+        <button
+          class="btn btn-ghost text-primary font-mono text-sm"
+        >
+          npm i @forma/ui
+        </button>
+      </div>
+      <div
+        class="mt-16 flex flex-wrap justify-center gap-3"
+      >
+        <span
+          class="badge badge-success gap-1"
+        >
+          ● Stable
+        </span>
+        <span
+          class="badge badge-info"
+        >
+          TypeScript
+        </span>
+        <span
+          class="badge badge-warning text-warning-content"
+        >
+          React 18
+        </span>
+        <span
+          class="badge badge-neutral"
+        >
+          Next.js ready
+        </span>
+        <span
+          class="badge badge-ghost border-base-300 border"
+        >
+          WCAG 2.1 AA
+        </span>
       </div>
     </section>
+    <div
+      class="border-base-300 mx-12 border-t"
+    />
     <section
-      class="px-6 py-24"
+      class="mx-auto max-w-5xl px-12 py-24"
+      id="primitives"
     >
-      <div
-        class="container mx-auto space-y-6 text-center"
+      <p
+        class="text-primary mb-3 text-xs font-medium tracking-[0.14em] uppercase"
       >
-        <h2
-          class="text-4xl font-bold"
-        />
-        <a
-          class="btn btn-primary btn-lg"
-          href=""
-        />
+        Primitives
+      </p>
+      <h2
+        class="mb-4 font-serif text-4xl leading-snug font-bold "
+      >
+        Everything you need
+      </h2>
+      <p
+        class="text-base-content/60 mb-12 max-w-xl text-base leading-relaxed "
+      >
+        Atomic components built from design tokens. Every variant, every state, every size — composable by default.
+      </p>
+      <div
+        class="mb-10"
+      >
+        <p
+          class="text-base-content/50 mb-4 text-sm"
+        >
+          Buttons
+        </p>
+        <div
+          class="mb-4 flex flex-wrap items-center gap-3"
+        >
+          <button
+            class="btn btn-primary"
+          >
+            Primary action
+          </button>
+          <button
+            class="btn btn-ghost"
+          >
+            Ghost
+          </button>
+          <button
+            class="btn btn-error"
+          >
+            Destructive
+          </button>
+          <button
+            class="btn btn-primary btn-sm"
+          >
+            Small
+          </button>
+          <button
+            class="btn btn-ghost btn-sm cursor-not-allowed opacity-40"
+            disabled=""
+          >
+            Disabled
+          </button>
+          <button
+            class="btn btn-primary"
+          >
+            <span
+              class="loading loading-spinner loading-xs"
+            />
+            Loading…
+          </button>
+        </div>
+        <div
+          class="flex flex-wrap items-center gap-3"
+        >
+          <button
+            class="btn btn-square btn-ghost border-base-300 text-base-content/50 border"
+          >
+            ⊕
+          </button>
+          <button
+            class="btn btn-square btn-ghost border-base-300 text-base-content/50 border"
+          >
+            ✎
+          </button>
+          <button
+            class="btn btn-square btn-ghost border-base-300 text-base-content/50 border"
+          >
+            ⋯
+          </button>
+          <span
+            class="badge badge-ghost border-base-300 text-base-content/50 rounded-full border px-3 py-1 text-xs"
+          >
+            v2.4.0
+          </span>
+          <span
+            class="badge badge-ghost border-base-300 text-base-content/50 rounded-full border px-3 py-1 text-xs"
+          >
+            MIT
+          </span>
+          <div
+            class="tooltip tooltip-top"
+            data-tip="This is a tooltip"
+          >
+            <button
+              class="btn btn-ghost btn-sm"
+            >
+              Hover me
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mb-10 grid grid-cols-2 gap-10"
+      >
+        <div>
+          <p
+            class="text-base-content/50 mb-4 text-sm"
+          >
+            Avatars
+          </p>
+          <div
+            class="mb-4 flex gap-3"
+          >
+            <div
+              class="avatar placeholder"
+            >
+              <div
+                class="w-10 rounded-full bg-primary/20 text-primary"
+              >
+                <span
+                  class="text-sm font-medium"
+                >
+                  JD
+                </span>
+              </div>
+            </div>
+            <div
+              class="avatar placeholder"
+            >
+              <div
+                class="w-10 rounded-full bg-success/20 text-success"
+              >
+                <span
+                  class="text-sm font-medium"
+                >
+                  AL
+                </span>
+              </div>
+            </div>
+            <div
+              class="avatar placeholder"
+            >
+              <div
+                class="w-10 rounded-full bg-info/20 text-info"
+              >
+                <span
+                  class="text-sm font-medium"
+                >
+                  MK
+                </span>
+              </div>
+            </div>
+            <div
+              class="avatar placeholder"
+            >
+              <div
+                class="w-10 rounded-full bg-error/20 text-error"
+              >
+                <span
+                  class="text-sm font-medium"
+                >
+                  PR
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="avatar-group -space-x-3"
+          >
+            <div
+              class="avatar placeholder"
+            >
+              <div
+                class="ring-base-100 w-10 rounded-full ring-2 bg-primary/20 text-primary"
+              >
+                <span
+                  class="text-xs font-medium"
+                >
+                  JD
+                </span>
+              </div>
+            </div>
+            <div
+              class="avatar placeholder"
+            >
+              <div
+                class="ring-base-100 w-10 rounded-full ring-2 bg-success/20 text-success"
+              >
+                <span
+                  class="text-xs font-medium"
+                >
+                  AL
+                </span>
+              </div>
+            </div>
+            <div
+              class="avatar placeholder"
+            >
+              <div
+                class="ring-base-100 w-10 rounded-full ring-2 bg-info/20 text-info"
+              >
+                <span
+                  class="text-xs font-medium"
+                >
+                  MK
+                </span>
+              </div>
+            </div>
+            <div
+              class="avatar placeholder"
+            >
+              <div
+                class="ring-base-100 w-10 rounded-full ring-2 bg-base-300 text-base-content/50"
+              >
+                <span
+                  class="text-xs font-medium"
+                >
+                  +9
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p
+            class="text-base-content/50 mb-4 text-sm"
+          >
+            Badges & tags
+          </p>
+          <div
+            class="flex flex-wrap gap-3"
+          >
+            <span
+              class="badge badge-success"
+            >
+              ● Active
+            </span>
+            <span
+              class="badge badge-error"
+            >
+              ● Offline
+            </span>
+            <span
+              class="badge badge-warning"
+            >
+              ● Pending
+            </span>
+            <span
+              class="badge badge-info"
+            >
+              New
+            </span>
+            <span
+              class="badge badge-warning text-warning-content"
+            >
+              Premium
+            </span>
+            <span
+              class="badge badge-neutral"
+            >
+              Draft
+            </span>
+          </div>
+        </div>
+      </div>
+      <p
+        class="text-base-content/50 mb-4 text-sm"
+      >
+        Cards
+      </p>
+      <div
+        class="grid grid-cols-3 gap-5"
+      >
+        <div
+          class="card bg-base-200 border-base-300 hover:border-primary/40 border transition-colors"
+        >
+          <div
+            class="card-body p-7"
+          >
+            <div
+              class="bg-primary/10 mb-4 flex h-10 w-10 items-center justify-center rounded-lg text-lg"
+            >
+              ⬡
+            </div>
+            <h3
+              class="card-title text-sm font-medium"
+            >
+              Design tokens
+            </h3>
+            <p
+              class="text-base-content/50 text-sm leading-relaxed"
+            >
+              Color, spacing, and typography exported as CSS variables and JS constants.
+            </p>
+          </div>
+        </div>
+        <div
+          class="card bg-base-200 border-base-300 hover:border-primary/40 border transition-colors"
+        >
+          <div
+            class="card-body p-7"
+          >
+            <div
+              class="bg-primary/10 mb-4 flex h-10 w-10 items-center justify-center rounded-lg text-lg"
+            >
+              ◈
+            </div>
+            <h3
+              class="card-title text-sm font-medium"
+            >
+              Composable API
+            </h3>
+            <p
+              class="text-base-content/50 text-sm leading-relaxed"
+            >
+              Every component is headless-first. Bring your own styles or use our presets.
+            </p>
+          </div>
+        </div>
+        <div
+          class="card bg-base-200 border-base-300 hover:border-primary/40 border transition-colors"
+        >
+          <div
+            class="card-body p-7"
+          >
+            <div
+              class="bg-primary/10 mb-4 flex h-10 w-10 items-center justify-center rounded-lg text-lg"
+            >
+              ◉
+            </div>
+            <h3
+              class="card-title text-sm font-medium"
+            >
+              Accessible by default
+            </h3>
+            <p
+              class="text-base-content/50 text-sm leading-relaxed"
+            >
+              ARIA patterns, keyboard navigation, and focus management built in from day one.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div
+      class="border-base-300 mx-12 border-t"
+    />
+    <section
+      class="mx-auto max-w-5xl px-12 py-24"
+      id="forms"
+    >
+      <p
+        class="text-primary mb-3 text-xs font-medium tracking-[0.14em] uppercase"
+      >
+        Form controls
+      </p>
+      <h2
+        class="mb-4 font-serif text-4xl leading-snug font-bold "
+      >
+        Forms that don't frustrate
+      </h2>
+      <p
+        class="text-base-content/60 mb-12 max-w-xl text-base leading-relaxed "
+      >
+        Validation states, accessible labels, and composable field groups — all wired up and ready to go.
+      </p>
+      <div
+        class="grid grid-cols-2 gap-10"
+      >
+        <div>
+          <div
+            class="mb-5 grid grid-cols-2 gap-5"
+          >
+            <div
+              class="form-control"
+            >
+              <label
+                class="label"
+              >
+                <span
+                  class="label-text text-base-content/50 text-xs"
+                >
+                  First name
+                </span>
+              </label>
+              <input
+                class="input input-bordered w-full"
+                placeholder="Jane"
+                type="text"
+              />
+            </div>
+            <div
+              class="form-control"
+            >
+              <label
+                class="label"
+              >
+                <span
+                  class="label-text text-base-content/50 text-xs"
+                >
+                  Last name
+                </span>
+              </label>
+              <input
+                class="input input-bordered w-full"
+                placeholder="Doe"
+                type="text"
+              />
+            </div>
+          </div>
+          <div
+            class="form-control mb-5"
+          >
+            <label
+              class="label"
+            >
+              <span
+                class="label-text text-base-content/50 text-xs"
+              >
+                Email address
+              </span>
+            </label>
+            <input
+              class="input input-bordered w-full"
+              placeholder="jane@forma.io"
+              type="email"
+            />
+            <label
+              class="label"
+            >
+              <span
+                class="label-text-alt text-base-content/40"
+              >
+                We'll never share your email.
+              </span>
+            </label>
+          </div>
+          <div
+            class="form-control mb-5"
+          >
+            <label
+              class="label"
+            >
+              <span
+                class="label-text text-base-content/50 text-xs"
+              >
+                Invalid input
+              </span>
+            </label>
+            <input
+              class="input input-bordered input-error w-full"
+              type="text"
+              value="bad-email@"
+            />
+            <label
+              class="label"
+            >
+              <span
+                class="label-text-alt text-error"
+              >
+                Please enter a valid email address.
+              </span>
+            </label>
+          </div>
+          <div
+            class="form-control mb-5"
+          >
+            <label
+              class="label"
+            >
+              <span
+                class="label-text text-base-content/50 text-xs"
+              >
+                Role
+              </span>
+            </label>
+            <select
+              class="select select-bordered w-full"
+            >
+              <option>
+                Designer
+              </option>
+              <option>
+                Engineer
+              </option>
+              <option>
+                Product manager
+              </option>
+            </select>
+          </div>
+          <div
+            class="form-control mb-5"
+          >
+            <label
+              class="label"
+            >
+              <span
+                class="label-text text-base-content/50 text-xs"
+              >
+                Experience (years)
+              </span>
+            </label>
+            <input
+              class="range range-primary range-sm"
+              max="20"
+              min="0"
+              type="range"
+              value="5"
+            />
+          </div>
+          <button
+            class="btn btn-primary w-full"
+          >
+            Submit
+          </button>
+        </div>
+        <div>
+          <p
+            class="text-base-content/50 mb-4 text-sm"
+          >
+            Toggles, checkboxes & radios
+          </p>
+          <div
+            class="mb-6 flex flex-col gap-3"
+          >
+            <label
+              class="flex cursor-pointer items-center gap-3 text-sm"
+            >
+              <input
+                checked=""
+                class="checkbox checkbox-primary checkbox-sm"
+                type="checkbox"
+              />
+              Send email notifications
+            </label>
+            <label
+              class="flex cursor-pointer items-center gap-3 text-sm"
+            >
+              <input
+                class="checkbox checkbox-primary checkbox-sm"
+                type="checkbox"
+              />
+              Weekly digest
+            </label>
+            <label
+              class="flex cursor-pointer items-center gap-3 text-sm"
+            >
+              <input
+                checked=""
+                class="checkbox checkbox-primary checkbox-sm"
+                type="checkbox"
+              />
+              Product updates
+            </label>
+          </div>
+          <div
+            class="mb-6 flex flex-col gap-3"
+          >
+            <label
+              class="flex cursor-pointer items-center gap-3 text-sm"
+            >
+              <input
+                checked=""
+                class="radio radio-primary radio-sm"
+                name="plan"
+                type="radio"
+              />
+              Monthly billing
+            </label>
+            <label
+              class="flex cursor-pointer items-center gap-3 text-sm"
+            >
+              <input
+                class="radio radio-primary radio-sm"
+                name="plan"
+                type="radio"
+              />
+              Annual billing (save 20%)
+            </label>
+            <label
+              class="flex cursor-pointer items-center gap-3 text-sm"
+            >
+              <input
+                class="radio radio-primary radio-sm"
+                name="plan"
+                type="radio"
+              />
+              Enterprise
+            </label>
+          </div>
+          <div
+            class="flex flex-col gap-3"
+          >
+            <label
+              class="flex cursor-pointer items-center gap-3 text-sm"
+            >
+              <input
+                checked=""
+                class="toggle toggle-primary toggle-sm"
+                type="checkbox"
+              />
+              Dark mode
+            </label>
+            <label
+              class="flex cursor-pointer items-center gap-3 text-sm"
+            >
+              <input
+                checked=""
+                class="toggle toggle-primary toggle-sm"
+                type="checkbox"
+              />
+              Auto-save
+            </label>
+            <label
+              class="flex cursor-pointer items-center gap-3 text-sm"
+            >
+              <input
+                class="toggle toggle-primary toggle-sm"
+                type="checkbox"
+              />
+              Beta features
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div
+      class="border-base-300 mx-12 border-t"
+    />
+    <section
+      class="mx-auto max-w-5xl px-12 py-24"
+      id="feedback"
+    >
+      <p
+        class="text-primary mb-3 text-xs font-medium tracking-[0.14em] uppercase"
+      >
+        Feedback & display
+      </p>
+      <h2
+        class="mb-4 font-serif text-4xl leading-snug font-bold "
+      >
+        Communicate every state
+      </h2>
+      <p
+        class="text-base-content/60 mb-12 max-w-xl text-base leading-relaxed "
+      >
+        Alerts, toasts, progress, skeletons — all the patterns you need to tell users what's happening.
+      </p>
+      <div
+        class="mb-10 grid grid-cols-2 gap-10"
+      >
+        <div>
+          <p
+            class="text-base-content/50 mb-4 text-sm"
+          >
+            Alerts
+          </p>
+          <div
+            class="flex flex-col gap-3"
+          >
+            <div
+              class="alert alert-success text-sm"
+              role="alert"
+            >
+              <span>
+                ✓
+              </span>
+              <div>
+                <strong
+                  class="block"
+                >
+                  Changes saved
+                </strong>
+                <span
+                  class="text-xs opacity-80"
+                >
+                  Your profile was updated successfully.
+                </span>
+              </div>
+            </div>
+            <div
+              class="alert alert-error text-sm"
+              role="alert"
+            >
+              <span>
+                ✕
+              </span>
+              <div>
+                <strong
+                  class="block"
+                >
+                  Payment failed
+                </strong>
+                <span
+                  class="text-xs opacity-80"
+                >
+                  Your card was declined. Please try again.
+                </span>
+              </div>
+            </div>
+            <div
+              class="alert alert-warning text-sm"
+              role="alert"
+            >
+              <span>
+                ⚠
+              </span>
+              <div>
+                <strong
+                  class="block"
+                >
+                  Trial ending soon
+                </strong>
+                <span
+                  class="text-xs opacity-80"
+                >
+                  7 days left in your free trial.
+                </span>
+              </div>
+            </div>
+            <div
+              class="alert alert-info text-sm"
+              role="alert"
+            >
+              <span>
+                ℹ
+              </span>
+              <div>
+                <strong
+                  class="block"
+                >
+                  Scheduled maintenance
+                </strong>
+                <span
+                  class="text-xs opacity-80"
+                >
+                  Downtime on Sat, Apr 6 from 02:00–04:00 UTC.
+                </span>
+              </div>
+            </div>
+          </div>
+          <p
+            class="text-base-content/50 mt-6 mb-4 text-sm"
+          >
+            Toast
+          </p>
+          <div
+            class="relative h-14"
+          >
+            <div
+              class="bg-base-300 border-base-content/10 absolute right-0 bottom-0 flex items-center gap-3 rounded-xl border px-4 py-3 text-sm shadow-lg"
+            >
+              <span
+                class="text-success"
+              >
+                ✓
+              </span>
+              <span>
+                Copied to clipboard
+              </span>
+              <button
+                class="text-base-content/40 hover:text-base-content ml-2 text-base leading-none"
+              >
+                ✕
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p
+            class="text-base-content/50 mb-4 text-sm"
+          >
+            Progress & steps
+          </p>
+          <div
+            class="mb-8 flex flex-col gap-2"
+          >
+            <div>
+              <div
+                class="text-base-content/50 mb-1 flex justify-between text-xs"
+              >
+                <span>
+                  Uploading files
+                </span>
+                <span>
+                  72
+                  %
+                </span>
+              </div>
+              <progress
+                class="progress progress-primary h-[6px] w-full"
+                max="100"
+                value="72"
+              />
+            </div>
+            <div>
+              <div
+                class="text-base-content/50 mb-1 flex justify-between text-xs"
+              >
+                <span>
+                  Processing
+                </span>
+                <span>
+                  40
+                  %
+                </span>
+              </div>
+              <progress
+                class="progress progress-primary h-[6px] w-full"
+                max="100"
+                value="40"
+              />
+            </div>
+            <div>
+              <div
+                class="text-base-content/50 mb-1 flex justify-between text-xs"
+              >
+                <span>
+                  Indexing
+                </span>
+                <span>
+                  100
+                  %
+                </span>
+              </div>
+              <progress
+                class="progress progress-primary h-[6px] w-full"
+                max="100"
+                value="100"
+              />
+            </div>
+          </div>
+          <ul
+            class="steps steps-horizontal mb-8 w-full text-xs"
+          >
+            <li
+              class="step step-primary"
+              data-content="✓"
+            >
+              Account
+            </li>
+            <li
+              class="step step-primary"
+              data-content="✓"
+            >
+              Profile
+            </li>
+            <li
+              class="step step-primary"
+            >
+              Billing
+            </li>
+            <li
+              class="step"
+            >
+              Done
+            </li>
+          </ul>
+          <p
+            class="text-base-content/50 mb-4 text-sm"
+          >
+            Skeleton & spinner
+          </p>
+          <div
+            class="flex items-start gap-3"
+          >
+            <div
+              class="skeleton h-11 w-11 shrink-0 rounded-full"
+            />
+            <div
+              class="flex flex-1 flex-col gap-2"
+            >
+              <div
+                class="skeleton h-3 w-3/5"
+              />
+              <div
+                class="skeleton h-3 w-4/5"
+              />
+              <div
+                class="skeleton h-3 w-2/5"
+              />
+            </div>
+          </div>
+          <div
+            class="mt-4 flex items-center gap-3"
+          >
+            <span
+              class="loading loading-spinner loading-sm text-primary"
+            />
+            <span
+              class="text-base-content/50 text-sm"
+            >
+              Loading your workspace…
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card bg-base-200 border-base-300 border"
+      >
+        <div
+          class="card-body items-center py-12 text-center"
+        >
+          <div
+            class="mb-4 text-5xl opacity-40"
+          >
+            ◌
+          </div>
+          <h3
+            class="mb-2 text-base font-medium"
+          >
+            No components yet
+          </h3>
+          <p
+            class="text-base-content/50 mb-6 text-sm"
+          >
+            Start building your library by adding your first component.
+          </p>
+          <button
+            class="btn btn-primary btn-sm"
+          >
+            Add component
+          </button>
+        </div>
+      </div>
+    </section>
+    <div
+      class="border-base-300 mx-12 border-t"
+    />
+    <section
+      class="mx-auto max-w-5xl px-12 py-24"
+      id="navigation"
+    >
+      <p
+        class="text-primary mb-3 text-xs font-medium tracking-[0.14em] uppercase"
+      >
+        Navigation
+      </p>
+      <h2
+        class="mb-4 font-serif text-4xl leading-snug font-bold "
+      >
+        Find your way
+      </h2>
+      <p
+        class="text-base-content/60 mb-12 max-w-xl text-base leading-relaxed "
+      >
+        Tabs, breadcrumbs, pagination, and more — every pattern users expect, executed with precision.
+      </p>
+      <div
+        class="mb-8"
+      >
+        <p
+          class="text-base-content/50 mb-4 text-sm"
+        >
+          Breadcrumb
+        </p>
+        <div
+          class="breadcrumbs text-base-content/50 text-sm"
+        >
+          <ul>
+            <li>
+              <a
+                class="hover:text-primary"
+                href="#"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                class="hover:text-primary"
+                href="#"
+              >
+                Components
+              </a>
+            </li>
+            <li>
+              <a
+                class="hover:text-primary"
+                href="#"
+              >
+                Navigation
+              </a>
+            </li>
+            <li
+              class="text-base-content"
+            >
+              Breadcrumb
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="mb-8"
+      >
+        <p
+          class="text-base-content/50 mb-4 text-sm"
+        >
+          Tabs
+        </p>
+        <div
+          class="tabs tabs-bordered"
+          role="tablist"
+        >
+          <button
+            class="tab capitalize tab-active text-primary"
+            role="tab"
+          >
+            overview
+          </button>
+          <button
+            class="tab capitalize text-base-content/50"
+            role="tab"
+          >
+            api
+          </button>
+          <button
+            class="tab capitalize text-base-content/50"
+            role="tab"
+          >
+            examples
+          </button>
+          <button
+            class="tab capitalize text-base-content/50"
+            role="tab"
+          >
+            changelog
+          </button>
+        </div>
+        <p
+          class="text-base-content/50 mt-4 font-mono text-sm leading-relaxed"
+        >
+          The Overview tab shows a high-level description of the component, its variants, and usage guidelines. Switch tabs to explore the API reference, live code examples, and version history.
+        </p>
+      </div>
+      <div
+        class="mb-8"
+      >
+        <p
+          class="text-base-content/50 mb-4 text-sm"
+        >
+          Pagination
+        </p>
+        <div
+          class="join"
+        >
+          <button
+            class="join-item btn btn-sm btn-ghost border-base-300 border "
+          >
+            ‹
+          </button>
+          <button
+            class="join-item btn btn-sm btn-primary "
+          >
+            1
+          </button>
+          <button
+            class="join-item btn btn-sm btn-ghost border-base-300 border "
+          >
+            2
+          </button>
+          <button
+            class="join-item btn btn-sm btn-ghost border-base-300 border "
+          >
+            3
+          </button>
+          <button
+            class="join-item btn btn-sm btn-ghost border-base-300 border btn-disabled opacity-40"
+          >
+            …
+          </button>
+          <button
+            class="join-item btn btn-sm btn-ghost border-base-300 border "
+          >
+            12
+          </button>
+          <button
+            class="join-item btn btn-sm btn-ghost border-base-300 border "
+          >
+            ›
+          </button>
+        </div>
+      </div>
+      <div
+        class="flex flex-wrap gap-3"
+      >
+        <label
+          class="btn btn-ghost border-base-300 border"
+          for="demo-modal"
+        >
+          Open modal ↗
+        </label>
+        <label
+          class="btn btn-ghost border-base-300 border"
+          for="demo-drawer"
+        >
+          Open drawer ↗
+        </label>
+        <div
+          class="relative"
+        >
+          <button
+            class="btn btn-ghost border-base-300 border"
+          >
+            Color popover ↓
+          </button>
+        </div>
+      </div>
+    </section>
+    <div
+      class="border-base-300 mx-12 border-t"
+    />
+    <section
+      class="mx-auto max-w-5xl px-12 py-24"
+    >
+      <p
+        class="text-primary mb-3 text-xs font-medium tracking-[0.14em] uppercase"
+      >
+        Containers
+      </p>
+      <h2
+        class="mb-4 font-serif text-4xl leading-snug font-bold "
+      >
+        Structured surfaces
+      </h2>
+      <p
+        class="text-base-content/60 mb-12 max-w-xl text-base leading-relaxed "
+      >
+        Cards, modals, drawers, accordions — flexible containers that adapt to any layout.
+      </p>
+      <div
+        class="grid grid-cols-2 gap-10"
+      >
+        <div>
+          <p
+            class="text-base-content/50 mb-4 text-sm"
+          >
+            Accordion
+          </p>
+          <div
+            class="border-base-300 overflow-hidden rounded-2xl border"
+          >
+            <div
+              class="collapse-arrow collapse collapse-open border-base-300 border-b bg-transparent last:border-b-0"
+            >
+              <input
+                checked=""
+                name="faq"
+                type="radio"
+              />
+              <div
+                class="collapse-title text-base-content px-5 py-4 text-sm font-medium"
+              >
+                What tokens does Forma export?
+              </div>
+              <div
+                class="collapse-content px-5"
+              >
+                <p
+                  class="text-base-content/50 pb-2 text-sm leading-relaxed"
+                >
+                  Forma exports CSS custom properties for color, spacing, radius, shadow, and typography — plus a JS token object for use in styled-components or Tailwind configs.
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse-arrow collapse  border-base-300 border-b bg-transparent last:border-b-0"
+            >
+              <input
+                name="faq"
+                type="radio"
+              />
+              <div
+                class="collapse-title text-base-content px-5 py-4 text-sm font-medium"
+              >
+                Is it framework-agnostic?
+              </div>
+              <div
+                class="collapse-content px-5"
+              >
+                <p
+                  class="text-base-content/50 pb-2 text-sm leading-relaxed"
+                >
+                  The core tokens and CSS utilities work anywhere. React components are available via @forma/react, with Vue and Svelte packages coming soon.
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse-arrow collapse  border-base-300 border-b bg-transparent last:border-b-0"
+            >
+              <input
+                name="faq"
+                type="radio"
+              />
+              <div
+                class="collapse-title text-base-content px-5 py-4 text-sm font-medium"
+              >
+                How are accessibility levels tested?
+              </div>
+              <div
+                class="collapse-content px-5"
+              >
+                <p
+                  class="text-base-content/50 pb-2 text-sm leading-relaxed"
+                >
+                  We run automated axe-core tests in CI and manual audits with NVDA and VoiceOver on every major release. All interactive components meet WCAG 2.1 AA criteria.
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse-arrow collapse  border-base-300 border-b bg-transparent last:border-b-0"
+            >
+              <input
+                name="faq"
+                type="radio"
+              />
+              <div
+                class="collapse-title text-base-content px-5 py-4 text-sm font-medium"
+              >
+                Can I use Forma in a commercial project?
+              </div>
+              <div
+                class="collapse-content px-5"
+              >
+                <p
+                  class="text-base-content/50 pb-2 text-sm leading-relaxed"
+                >
+                  Yes — Forma is MIT licensed. You can use it in personal, open-source, and commercial projects with no restrictions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p
+            class="text-base-content/50 mb-4 text-sm"
+          >
+            Calendar / Date picker
+          </p>
+          <div
+            class="border-base-300 overflow-hidden rounded-2xl border"
+          >
+            <div
+              class="bg-base-300 border-base-content/10 flex items-center justify-between border-b px-5 py-4"
+            >
+              <button
+                class="btn btn-ghost btn-xs"
+              >
+                ‹
+              </button>
+              <span
+                class="text-sm font-medium"
+              >
+                April 2026
+              </span>
+              <button
+                class="btn btn-ghost btn-xs"
+              >
+                ›
+              </button>
+            </div>
+            <div
+              class="grid grid-cols-7"
+            >
+              <div
+                class="text-base-content/40 bg-base-300 border-base-content/10 border-b py-2 text-center text-[11px] font-medium tracking-wider uppercase"
+              >
+                Su
+              </div>
+              <div
+                class="text-base-content/40 bg-base-300 border-base-content/10 border-b py-2 text-center text-[11px] font-medium tracking-wider uppercase"
+              >
+                Mo
+              </div>
+              <div
+                class="text-base-content/40 bg-base-300 border-base-content/10 border-b py-2 text-center text-[11px] font-medium tracking-wider uppercase"
+              >
+                Tu
+              </div>
+              <div
+                class="text-base-content/40 bg-base-300 border-base-content/10 border-b py-2 text-center text-[11px] font-medium tracking-wider uppercase"
+              >
+                We
+              </div>
+              <div
+                class="text-base-content/40 bg-base-300 border-base-content/10 border-b py-2 text-center text-[11px] font-medium tracking-wider uppercase"
+              >
+                Th
+              </div>
+              <div
+                class="text-base-content/40 bg-base-300 border-base-content/10 border-b py-2 text-center text-[11px] font-medium tracking-wider uppercase"
+              >
+                Fr
+              </div>
+              <div
+                class="text-base-content/40 bg-base-300 border-base-content/10 border-b py-2 text-center text-[11px] font-medium tracking-wider uppercase"
+              >
+                Sa
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/20"
+              >
+                29
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/20"
+              >
+                30
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/20"
+              >
+                31
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                1
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                2
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                3
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-primary font-semibold"
+              >
+                4
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                5
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                6
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                7
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 bg-primary/10 text-base-content"
+              >
+                8
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 bg-primary/10 text-base-content"
+              >
+                9
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 bg-primary/10 text-base-content"
+              >
+                10
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 bg-primary text-primary-content font-semibold"
+              >
+                11
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                12
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                13
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                14
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                15
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                16
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                17
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                18
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                19
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                20
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                21
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                22
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                23
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                24
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                25
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                26
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                27
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                28
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                29
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/50 hover:bg-base-300 hover:text-base-content"
+              >
+                30
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/20"
+              >
+                1
+              </div>
+              <div
+                class="border-base-content/10 cursor-pointer border-r border-b py-[10px] text-center text-xs transition-colors last:border-r-0 text-base-content/20"
+              >
+                2
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div
+      class="border-base-300 mx-12 border-t"
+    />
+    <section
+      class="mx-auto max-w-5xl px-12 py-24"
+      id="data"
+    >
+      <p
+        class="text-primary mb-3 text-xs font-medium tracking-[0.14em] uppercase"
+      >
+        Data display
+      </p>
+      <h2
+        class="mb-4 font-serif text-4xl leading-snug font-bold "
+      >
+        Make data legible
+      </h2>
+      <p
+        class="text-base-content/60 mb-12 max-w-xl text-base leading-relaxed "
+      >
+        Tables, charts, and lists that scale from a handful of records to millions — without sacrificing clarity.
+      </p>
+      <div
+        class="card bg-base-200 border-base-300 mb-8 border"
+      >
+        <div
+          class="card-body p-7"
+        >
+          <p
+            class="mb-1 text-sm font-medium"
+          >
+            Monthly revenue
+          </p>
+          <p
+            class="text-base-content/40 mb-6 text-xs"
+          >
+            Q1 · Q2 2026
+          </p>
+          <div
+            class="relative flex h-36 items-end gap-2"
+          >
+            <div
+              class="bg-base-content/10 absolute right-0 bottom-7 left-0 h-px"
+            />
+            <div
+              class="flex h-full flex-1 flex-col items-center justify-end gap-1"
+            >
+              <span
+                class="text-base-content/30 text-[11px]"
+              >
+                $42k
+              </span>
+              <div
+                class="w-full cursor-pointer rounded-t opacity-85 transition-opacity hover:opacity-100 bg-base-300"
+                style="height: 58%;"
+              />
+              <span
+                class="text-base-content/30 text-[11px]"
+              >
+                Jan
+              </span>
+            </div>
+            <div
+              class="flex h-full flex-1 flex-col items-center justify-end gap-1"
+            >
+              <span
+                class="text-base-content/30 text-[11px]"
+              >
+                $55k
+              </span>
+              <div
+                class="w-full cursor-pointer rounded-t opacity-85 transition-opacity hover:opacity-100 bg-base-300"
+                style="height: 72%;"
+              />
+              <span
+                class="text-base-content/30 text-[11px]"
+              >
+                Feb
+              </span>
+            </div>
+            <div
+              class="flex h-full flex-1 flex-col items-center justify-end gap-1"
+            >
+              <span
+                class="text-base-content/30 text-[11px]"
+              >
+                $49k
+              </span>
+              <div
+                class="w-full cursor-pointer rounded-t opacity-85 transition-opacity hover:opacity-100 bg-base-300"
+                style="height: 65%;"
+              />
+              <span
+                class="text-base-content/30 text-[11px]"
+              >
+                Mar
+              </span>
+            </div>
+            <div
+              class="flex h-full flex-1 flex-col items-center justify-end gap-1"
+            >
+              <span
+                class="text-base-content/30 text-[11px]"
+              >
+                $78k
+              </span>
+              <div
+                class="w-full cursor-pointer rounded-t opacity-85 transition-opacity hover:opacity-100 bg-primary"
+                style="height: 100%;"
+              />
+              <span
+                class="text-base-content/30 text-[11px]"
+              >
+                Apr
+              </span>
+            </div>
+            <div
+              class="flex h-full flex-1 flex-col items-center justify-end gap-1"
+            >
+              <span
+                class="text-base-content/30 text-[11px]"
+              >
+                $61k
+              </span>
+              <div
+                class="w-full cursor-pointer rounded-t opacity-85 transition-opacity hover:opacity-100 bg-base-300"
+                style="height: 80%;"
+              />
+              <span
+                class="text-base-content/30 text-[11px]"
+              >
+                May
+              </span>
+            </div>
+            <div
+              class="flex h-full flex-1 flex-col items-center justify-end gap-1"
+            >
+              <span
+                class="text-base-content/30 text-[11px]"
+              >
+                $70k
+              </span>
+              <div
+                class="w-full cursor-pointer rounded-t opacity-85 transition-opacity hover:opacity-100 bg-base-300"
+                style="height: 92%;"
+              />
+              <span
+                class="text-base-content/30 text-[11px]"
+              >
+                Jun
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-base-300 overflow-hidden rounded-2xl border"
+      >
+        <table
+          class="table-sm table w-full text-sm"
+        >
+          <thead
+            class="bg-base-300 text-base-content/40 text-xs tracking-wider uppercase"
+          >
+            <tr>
+              <th>
+                <input
+                  class="checkbox checkbox-primary checkbox-xs"
+                  type="checkbox"
+                />
+              </th>
+              <th
+                class="hover:text-primary cursor-pointer"
+              >
+                Component ↑
+              </th>
+              <th
+                class="hover:text-primary cursor-pointer"
+              >
+                Category
+              </th>
+              <th>
+                Status
+              </th>
+              <th
+                class="hover:text-primary cursor-pointer"
+              >
+                Version
+              </th>
+              <th>
+                Actions
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              class="hover:bg-base-content/[0.02] border-base-300 border-t"
+            >
+              <td>
+                <input
+                  checked=""
+                  class="checkbox checkbox-primary checkbox-xs"
+                  type="checkbox"
+                />
+              </td>
+              <td
+                class="font-medium"
+              >
+                Button
+              </td>
+              <td>
+                <span
+                  class="badge badge-info badge-sm"
+                >
+                  Primitive
+                </span>
+              </td>
+              <td>
+                <span
+                  class="badge badge-success badge-sm"
+                >
+                  ● Stable
+                </span>
+              </td>
+              <td>
+                <span
+                  class="text-primary font-mono text-xs"
+                >
+                  2.4.0
+                </span>
+              </td>
+              <td>
+                <button
+                  class="btn btn-ghost btn-xs border-base-300 border"
+                >
+                  View
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="hover:bg-base-content/[0.02] border-base-300 border-t"
+            >
+              <td>
+                <input
+                  class="checkbox checkbox-primary checkbox-xs"
+                  type="checkbox"
+                />
+              </td>
+              <td
+                class="font-medium"
+              >
+                DataTable
+              </td>
+              <td>
+                <span
+                  class="badge badge-warning badge-sm"
+                >
+                  Data
+                </span>
+              </td>
+              <td>
+                <span
+                  class="badge badge-success badge-sm"
+                >
+                  ● Stable
+                </span>
+              </td>
+              <td>
+                <span
+                  class="text-primary font-mono text-xs"
+                >
+                  2.3.1
+                </span>
+              </td>
+              <td>
+                <button
+                  class="btn btn-ghost btn-xs border-base-300 border"
+                >
+                  View
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="hover:bg-base-content/[0.02] border-base-300 border-t"
+            >
+              <td>
+                <input
+                  class="checkbox checkbox-primary checkbox-xs"
+                  type="checkbox"
+                />
+              </td>
+              <td
+                class="font-medium"
+              >
+                CommandMenu
+              </td>
+              <td>
+                <span
+                  class="badge badge-neutral badge-sm"
+                >
+                  Navigation
+                </span>
+              </td>
+              <td>
+                <span
+                  class="badge badge-warning badge-sm"
+                >
+                  ● Beta
+                </span>
+              </td>
+              <td>
+                <span
+                  class="text-primary font-mono text-xs"
+                >
+                  0.9.2
+                </span>
+              </td>
+              <td>
+                <button
+                  class="btn btn-ghost btn-xs border-base-300 border"
+                >
+                  View
+                </button>
+              </td>
+            </tr>
+            <tr
+              class="hover:bg-base-content/[0.02] border-base-300 border-t"
+            >
+              <td>
+                <input
+                  class="checkbox checkbox-primary checkbox-xs"
+                  type="checkbox"
+                />
+              </td>
+              <td
+                class="font-medium"
+              >
+                DateRangePicker
+              </td>
+              <td>
+                <span
+                  class="badge badge-neutral badge-sm"
+                >
+                  Form
+                </span>
+              </td>
+              <td>
+                <span
+                  class="badge badge-error badge-sm"
+                >
+                  ● Deprecated
+                </span>
+              </td>
+              <td>
+                <span
+                  class="text-primary font-mono text-xs"
+                >
+                  1.8.0
+                </span>
+              </td>
+              <td>
+                <button
+                  class="btn btn-ghost btn-xs border-base-300 border"
+                >
+                  View
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <div
+      class="border-base-300 mx-12 border-t"
+    />
+    <section
+      class="mx-auto max-w-5xl px-12 py-24"
+      id="pricing"
+    >
+      <p
+        class="text-primary mb-3 text-xs font-medium tracking-[0.14em] uppercase"
+      >
+        Pricing
+      </p>
+      <h2
+        class="mb-4 font-serif text-4xl leading-snug font-bold text-center"
+      >
+        Simple, honest pricing
+      </h2>
+      <p
+        class="text-base-content/60 mb-12 max-w-xl text-base leading-relaxed mx-auto text-center"
+      >
+        No hidden fees. Cancel anytime. Every plan includes the full component library.
+      </p>
+      <div
+        class="grid grid-cols-3 gap-5"
+      >
+        <div
+          class="card border border-base-300 bg-base-200"
+        >
+          <div
+            class="card-body p-8"
+          >
+            <p
+              class="text-base-content/40 mb-3 text-xs font-medium tracking-widest uppercase"
+            >
+              Starter
+            </p>
+            <p
+              class="mb-1 font-serif text-4xl font-bold "
+            >
+              Free
+            </p>
+            <p
+              class="text-base-content/40 mb-7 text-sm"
+            >
+              forever
+            </p>
+            <ul
+              class="text-base-content/50 mb-7 flex flex-col gap-2 text-sm"
+            >
+              <li
+                class="before:text-primary before:font-semibold before:content-['✓_']"
+              >
+                47 base components
+              </li>
+              <li
+                class="before:text-primary before:font-semibold before:content-['✓_']"
+              >
+                Community support
+              </li>
+              <li
+                class="before:text-primary before:font-semibold before:content-['✓_']"
+              >
+                MIT license
+              </li>
+            </ul>
+            <button
+              class="btn w-full btn-ghost border-base-300"
+            >
+              Get started
+            </button>
+          </div>
+        </div>
+        <div
+          class="card border border-primary relative bg-base-200"
+        >
+          <div
+            class="bg-primary text-primary-content absolute -top-px right-5 rounded-b-lg px-3 py-1 text-[11px] font-semibold tracking-wider"
+          >
+            POPULAR
+          </div>
+          <div
+            class="card-body p-8"
+          >
+            <p
+              class="text-base-content/40 mb-3 text-xs font-medium tracking-widest uppercase"
+            >
+              Pro
+            </p>
+            <p
+              class="mb-1 font-serif text-4xl font-bold text-primary"
+            >
+              $29
+            </p>
+            <p
+              class="text-base-content/40 mb-7 text-sm"
+            >
+              per seat / month
+            </p>
+            <ul
+              class="text-base-content/50 mb-7 flex flex-col gap-2 text-sm"
+            >
+              <li
+                class="before:text-primary before:font-semibold before:content-['✓_']"
+              >
+                Everything in Starter
+              </li>
+              <li
+                class="before:text-primary before:font-semibold before:content-['✓_']"
+              >
+                Figma kit included
+              </li>
+              <li
+                class="before:text-primary before:font-semibold before:content-['✓_']"
+              >
+                Priority support
+              </li>
+              <li
+                class="before:text-primary before:font-semibold before:content-['✓_']"
+              >
+                Private Slack channel
+              </li>
+            </ul>
+            <button
+              class="btn w-full btn-primary"
+            >
+              Start free trial
+            </button>
+          </div>
+        </div>
+        <div
+          class="card border border-base-300 bg-base-200"
+        >
+          <div
+            class="card-body p-8"
+          >
+            <p
+              class="text-base-content/40 mb-3 text-xs font-medium tracking-widest uppercase"
+            >
+              Enterprise
+            </p>
+            <p
+              class="mb-1 font-serif text-4xl font-bold "
+            >
+              Custom
+            </p>
+            <p
+              class="text-base-content/40 mb-7 text-sm"
+            >
+              talk to us
+            </p>
+            <ul
+              class="text-base-content/50 mb-7 flex flex-col gap-2 text-sm"
+            >
+              <li
+                class="before:text-primary before:font-semibold before:content-['✓_']"
+              >
+                Everything in Pro
+              </li>
+              <li
+                class="before:text-primary before:font-semibold before:content-['✓_']"
+              >
+                White-label rights
+              </li>
+              <li
+                class="before:text-primary before:font-semibold before:content-['✓_']"
+              >
+                SLA & dedicated support
+              </li>
+              <li
+                class="before:text-primary before:font-semibold before:content-['✓_']"
+              >
+                Custom token generation
+              </li>
+            </ul>
+            <button
+              class="btn w-full btn-ghost border-base-300"
+            >
+              Contact sales
+            </button>
+          </div>
+        </div>
       </div>
     </section>
     <footer
-      class="px-6 py-8"
+      class="border-base-300 border-t py-12 text-center"
+    >
+      <p
+        class="text-primary mb-3 font-serif text-3xl"
+      >
+        Forma
+      </p>
+      <p
+        class="text-base-content/30 text-sm"
+      >
+        © 2026 Forma Design System · Built with care · MIT License
+      </p>
+    </footer>
+    <input
+      class="modal-toggle"
+      id="demo-modal"
+      type="checkbox"
+    />
+    <div
+      class="modal modal-bottom sm:modal-middle"
+      role="dialog"
     >
       <div
-        class="container mx-auto flex flex-col items-center gap-3 text-center text-sm opacity-60"
+        class="modal-box bg-base-200 border-base-300 border"
       >
-        <span>
-          © 
-          2026
-           
-          . All rights reserved.
-        </span>
+        <h3
+          class="mb-4 font-serif text-xl font-bold"
+        >
+          Modal component
+        </h3>
+        <p
+          class="text-base-content/50 mb-7 text-sm leading-relaxed"
+        >
+          This is a modal dialog. It traps focus, supports Escape key dismissal, and renders in a portal to avoid z-index collisions. Use it for confirmations, forms, and contextual detail views.
+        </p>
+        <div
+          class="modal-action"
+        >
+          <label
+            class="btn btn-ghost border-base-300 border"
+            for="demo-modal"
+          >
+            Cancel
+          </label>
+          <label
+            class="btn btn-primary"
+            for="demo-modal"
+          >
+            Confirm
+          </label>
+        </div>
       </div>
-    </footer>
+      <label
+        class="modal-backdrop"
+        for="demo-modal"
+      />
+    </div>
   </div>
 </div>
 `;

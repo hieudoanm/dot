@@ -71,9 +71,11 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ matrix.platform }}
-          name: Latest ${{ matrix.platform }} Release
+          name: ${{ matrix.platform }} Release
           body: "Automated Build for ${{ matrix.platform }} latest commit on master."
-          prerelease: true
+          draft: false
+          prerelease: false
+          overwrite: true
           files: ${{ matrix.bundle_path }}
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

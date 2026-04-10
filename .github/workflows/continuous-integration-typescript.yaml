@@ -3,12 +3,16 @@ name: Continuous Integration (TypeScript)
 on:
   push:
     branches:
-      - "master"
-      - "develop"
-      - "hotfix/**"
-      - "feature/**"
-      - "renovate/**"
-      - "dependabot/**"
+      - 'master'
+      - 'develop'
+      - 'hotfix/**'
+      - 'feature/**'
+      - 'renovate/**'
+      - 'dependabot/**'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -25,13 +29,13 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v5
         with:
-          version: "10.33.0"
+          version: '10.33.0'
 
       - name: Install Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: "25.9.0"
-          cache: "pnpm"
+          node-version: '25.9.0'
+          cache: 'pnpm'
 
       - name: Install Dependencies
         run: pnpm install
@@ -42,10 +46,11 @@ jobs:
       - name: Test
         run: pnpm run test
 
-  # ── Build & Release (runs on all 3 platforms, only after quality passes) ─
+  # ── Build & Release (master only, all 3 platforms, after quality passes) ─
   build:
     name: Build (${{ matrix.platform }})
     needs: quality
+    if: github.ref == 'refs/heads/master'
     runs-on: ${{ matrix.platform }}
     strategy:
       fail-fast: false
@@ -70,13 +75,13 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v5
         with:
-          version: "10.33.0"
+          version: '10.33.0'
 
       - name: Install Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: "25.9.0"
-          cache: "pnpm"
+          node-version: '25.9.0'
+          cache: 'pnpm'
 
       - name: Install Dependencies
         run: pnpm install
@@ -91,22 +96,12 @@ jobs:
         run: pnpm run build
         shell: bash
 
-      - name: Delete Old Platform Release
-        if: github.ref == 'refs/heads/master'
-        uses: dev-drprasad/delete-tag-and-release@v1.1
-        with:
-          tag_name: ${{ matrix.platform }}
-          delete_release: true
-          github_token: ${{ secrets.GH_TOKEN }}
-        continue-on-error: true
-
       - name: Create / Update Platform Release
-        if: github.ref == 'refs/heads/master'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ matrix.platform }}
           name: ${{ matrix.platform }} Release
-          body: "Automated Build for ${{ matrix.platform }} latest commit on master."
+          body: 'Automated Build for ${{ matrix.platform }} latest commit on master.'
           draft: false
           prerelease: false
           overwrite: true

@@ -1,0 +1,297 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`DownloadsTemplate to match snapshot 1`] = `
+<div>
+  <div
+    class="bg-base-100 text-base-content relative flex min-h-screen flex-col items-center justify-center px-6 py-20 md:px-12"
+    data-theme="luxury"
+  >
+    <div
+      class="bg-primary/5 pointer-events-none absolute top-1/2 left-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl"
+    />
+    <div
+      class="relative mx-auto w-full max-w-3xl"
+    >
+      <div
+        class="mb-14 text-center"
+      >
+        <p
+          class="text-primary mb-7 text-xs tracking-[0.2em] uppercase"
+        >
+          Latest release
+        </p>
+        <h1
+          class="mb-6 font-serif text-6xl leading-[1.05] font-black tracking-tight md:text-7xl"
+        >
+          Download the app
+        </h1>
+        <p
+          class="text-base-content/60 mx-auto max-w-md text-base leading-relaxed"
+        >
+          Available for every platform. Pick your preferred install method and get started in seconds.
+        </p>
+      </div>
+      <div
+        class="mb-10 flex flex-col gap-5"
+      >
+        <div
+          class="card bg-base-200 border-base-300 hover:border-primary/40 border transition-colors"
+        >
+          <div
+            class="card-body p-7"
+          >
+            <div
+              class="mb-4 flex items-center gap-3"
+            >
+              <div
+                class="bg-primary/10 flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-xl"
+              >
+                🖥️
+              </div>
+              <div
+                class="flex-1"
+              >
+                <div
+                  class="flex items-center gap-2"
+                >
+                  <h3
+                    class="font-medium"
+                  >
+                    CLI
+                  </h3>
+                  <span
+                    class="badge badge-sm badge-info"
+                  >
+                    Terminal
+                  </span>
+                </div>
+                <p
+                  class="text-base-content/40 text-xs"
+                >
+                  Install via package manager
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-base-300 border-base-content/10 flex items-center justify-between gap-3 rounded-xl border px-4 py-3"
+            >
+              <code
+                class="text-primary font-mono text-sm break-all"
+              />
+              <button
+                class="btn btn-xs shrink-0 btn-ghost border-base-300 border"
+              >
+                ⎘
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card bg-base-200 border-base-300 hover:border-primary/40 border transition-colors"
+        >
+          <div
+            class="card-body p-7"
+          >
+            <div
+              class="mb-4 flex items-center gap-3"
+            >
+              <div
+                class="bg-primary/10 flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-xl"
+              >
+                🍎
+              </div>
+              <div
+                class="flex-1"
+              >
+                <div
+                  class="flex items-center gap-2"
+                >
+                  <h3
+                    class="font-medium"
+                  >
+                    macOS
+                  </h3>
+                  <span
+                    class="badge badge-sm badge-success"
+                  >
+                    Recommended
+                  </span>
+                </div>
+                <p
+                  class="text-base-content/40 text-xs"
+                >
+                  macOS 12 Monterey or later · Apple Silicon & Intel
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-wrap gap-2"
+            >
+              <a
+                class="btn btn-sm btn-primary"
+                download=""
+                href=""
+              >
+                ↓ 
+                .app bundle
+              </a>
+              <a
+                class="btn btn-sm btn-ghost border-base-300 border"
+                download=""
+                href=""
+              >
+                ↓ 
+                .dmg installer
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card bg-base-200 border-base-300 hover:border-primary/40 border transition-colors"
+        >
+          <div
+            class="card-body p-7"
+          >
+            <div
+              class="mb-4 flex items-center gap-3"
+            >
+              <div
+                class="bg-primary/10 flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-xl"
+              >
+                🐧
+              </div>
+              <div
+                class="flex-1"
+              >
+                <div
+                  class="flex items-center gap-2"
+                >
+                  <h3
+                    class="font-medium"
+                  >
+                    Ubuntu / Linux
+                  </h3>
+                  <span
+                    class="badge badge-sm badge-neutral"
+                  >
+                    AppImage · deb
+                  </span>
+                </div>
+                <p
+                  class="text-base-content/40 text-xs"
+                >
+                  Ubuntu 20.04+ · Debian-based distros · x86_64
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-wrap gap-2"
+            >
+              <a
+                class="btn btn-sm btn-primary"
+                download=""
+                href=""
+              >
+                ↓ 
+                .AppImage
+              </a>
+              <a
+                class="btn btn-sm btn-ghost border-base-300 border"
+                download=""
+                href=""
+              >
+                ↓ 
+                .deb package
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card bg-base-200 border-base-300 hover:border-primary/40 border transition-colors"
+        >
+          <div
+            class="card-body p-7"
+          >
+            <div
+              class="mb-4 flex items-center gap-3"
+            >
+              <div
+                class="bg-primary/10 flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-xl"
+              >
+                🪟
+              </div>
+              <div
+                class="flex-1"
+              >
+                <div
+                  class="flex items-center gap-2"
+                >
+                  <h3
+                    class="font-medium"
+                  >
+                    Windows
+                  </h3>
+                  <span
+                    class="badge badge-sm badge-neutral"
+                  >
+                    exe · msi
+                  </span>
+                </div>
+                <p
+                  class="text-base-content/40 text-xs"
+                >
+                  Windows 10 / 11 · x86_64
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-wrap gap-2"
+            >
+              <a
+                class="btn btn-sm btn-primary"
+                download=""
+                href=""
+              >
+                ↓ 
+                .exe installer
+              </a>
+              <a
+                class="btn btn-sm btn-ghost border-base-300 border"
+                download=""
+                href=""
+              >
+                ↓ 
+                .msi package
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-wrap justify-center gap-3"
+      >
+        <span
+          class="badge badge-success gap-1"
+        >
+          ● Stable
+        </span>
+        <span
+          class="badge badge-info"
+        >
+          Free
+        </span>
+        <span
+          class="badge badge-neutral"
+        >
+          MIT License
+        </span>
+        <span
+          class="badge badge-ghost border-base-300 border"
+        >
+          WCAG 2.1 AA
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

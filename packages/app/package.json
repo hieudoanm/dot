@@ -57,7 +57,7 @@
   },
   "devDependencies": {
     "@capacitor/cli": "8.3.1",
-    "@dotenvx/dotenvx": "1.61.0",
+    "@dotenvx/dotenvx": "1.61.1",
     "@eslint/eslintrc": "3.3.5",
     "@tailwindcss/postcss": "4.2.2",
     "@tauri-apps/cli": "2.10.1",

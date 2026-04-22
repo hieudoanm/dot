@@ -73,8 +73,8 @@ importers:
         specifier: 8.3.1
         version: 8.3.1
       '@dotenvx/dotenvx':
-        specifier: 1.61.4
-        version: 1.61.4
+        specifier: 1.61.5
+        version: 1.61.5
       '@eslint/eslintrc':
         specifier: 3.3.5
         version: 3.3.5
@@ -426,8 +426,8 @@ packages:
     peerDependencies:
       react: '>=16.8.0'
 
-  '@dotenvx/dotenvx@1.61.4':
-    resolution: {integrity: sha512-g6QvAdXmSKMxmF1oFeCcDwklB5/fmkRXzApL3q2n20Z7YXUzDvFZg1ItTsXdX9g5hTyEKjmcOPJON37O5TiDew==}
+  '@dotenvx/dotenvx@1.61.5':
+    resolution: {integrity: sha512-DysyULN/STdycYnyoKIe4y0QjRutWp/EDlCwpyUvq2dknjZV8TkKsLM7QXTjf31eV4Ak7GDG5JQ2e5CvrmJsog==}
     hasBin: true
 
   '@ecies/ciphers@0.2.5':
@@ -5219,7 +5219,7 @@ snapshots:
       react: 19.2.5
       tslib: 2.8.1
 
-  '@dotenvx/dotenvx@1.61.4':
+  '@dotenvx/dotenvx@1.61.5':
     dependencies:
       commander: 11.1.0
       dotenv: 17.3.1
